@@ -10,23 +10,29 @@
     <link rel="stylesheet" href="app/css/bootstrap.css" />
 </head>
 
-<body ng-controller="MainController as main">
+<body ng-controller="PlataformaController">
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <img src="app/assets/logo.png" alt="" class="logo">
-            </div>
-            <ngview> algo</ngview>
+           
+            
+            <ngview>
+                    <plataforma-template></plataforma-template>
+            </ngview>
+        </div>
         </div>
     </div>
-    <script src="base64.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
     <script src="is.min.js"></script>
-    <script src="global.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-
     <script src="main.js"></script>
     <script src="MainService.min.js"></script>
+   
+    <script src="app/plataforma/plataforma.module.js"></script>
+    <script src="app/plataforma/plataforma.component.js"></script>
+   
+    
 </body>
 
 </html>
