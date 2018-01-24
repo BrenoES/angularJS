@@ -1,1 +1,1 @@
-angular.module('plataforma',[]);
+angular.module('plataforma',['ngRoute']);

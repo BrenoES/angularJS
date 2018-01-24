@@ -1,19 +1,18 @@
-<div class="jumbotron">
+<div class="jumbotron" ng-controller="PlataformaController">
     <div class="row">
-     <h1 class="text-escuro col-12">Selecione uma Plataforma</h1>
-   
-    <div class="card col-3 btn box" ng-repeat="plataforma in plataformas">
-        <a href=""></a>
-        <div class="card-block">
-            <div>
-                <img class="img-fluid" src="app/assets/{{plataforma.nome}}.jpg">
-            </div>
-
-            <h3 class="text-claro">{{plataforma.nome}}</h3>
-            <p class="text-claro">{{plataforma.descricao | filter:uppercase}}</p>
+        <h1 class="text-escuro col-12">Selecione uma Plataforma</h1>
+        <div class="card col-3 btn box" ng-repeat="plataforma in plataformas">
+            <a href="#!/planos/{{plataforma.sku}}">
+                <div class="card-block">
+                    <div>
+                        <img class="img-fluid card-img-top" src="app/assets/{{plataforma.nome}}.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="text-claro ">{{plataforma.nome}}</h3>
+                        <h7 class="text-claro">{{plataforma.descricao}}</h7>
+                    </div>
+                </div>
+            </a>
         </div>
-        </a>
     </div>
-
-</div>
 </div>

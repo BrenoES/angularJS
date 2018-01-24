@@ -1,0 +1,6 @@
+.div-bottom{
+    position: relative;
+    bottom: 0;
+    box-sizing: content-box;
+    padding-top: 30px;
+}

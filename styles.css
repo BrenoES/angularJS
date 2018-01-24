@@ -18,7 +18,7 @@ body {
     text-align: center;
 }
 .text-claro{
-        color: rgb(134, 133, 136)
+        color: rgb(134, 133, 136);
 }
 .text-escuro{
     color: rgb(69, 69, 70);
@@ -29,12 +29,12 @@ body {
     margin: 10px;
 }
 
-.box{
+    
+.box{   
+        position: relative;
         margin-top: 40px;
         margin-right: auto;
         margin-left: auto;
-        display: block;
-        
 }
 .logo {
     display: block;

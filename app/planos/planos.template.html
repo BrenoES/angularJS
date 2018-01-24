@@ -1,0 +1,29 @@
+<div class="jumbotron" ng-controller="PlanosController">
+    <div class="row">
+        <h1 class="text-escuro col-12">Escolha um plano</h1>
+        <div class="card col-md-3 col-12 btn box" ng-repeat="plano in planos" ng-hide="{{!plano.ativo}}">
+            <a href="#!/formulario/{{plano.sku}}">
+                <div class="card-block align-middle align-text-bottom">
+                    <div class="text-claro">
+                        <h3>{{plano.franquia}}</h3>
+                        <p>${{plano.valor}}</p>
+                        <table ng-show="plano.aparelho" class=" table table-striped">
+                            <tr>
+                                <td>{{plano.aparelho.nome}}</td>
+                            </tr>
+                            <tr>
+                                <td>${{plano.aparelho.valor}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{'Parcelas '+ plano.aparelho.numeroParcelas}}x</td>
+                            </tr>
+                            <tr ng-hide="{{!plano.aparelho.valorParcela}}">
+                                <td>{{'$'+ plano.aparelho.valorParcela}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
